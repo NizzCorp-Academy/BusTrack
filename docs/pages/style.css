@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.heading-font {
+    font-family: 'Baloo 2', cursive;
+}
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.phone-mockup {
+    perspective: 1000px;
+}
+.phone-mockup img {
+    transform: rotateY(-15deg);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.phone-mockup:hover img {
+    transform: rotateY(-5deg);
+}
+.timeline-step {
+    position: relative;
+}
+.timeline-step:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    width: 4rem;
+    height: 2px;
+    background: #ecc94b;
+}
+@media (max-width: 768px) {
+    .timeline-step:not(:last-child):after {
+        display: none;
+    }
+}

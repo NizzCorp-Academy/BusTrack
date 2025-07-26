@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusBooking - Your Local Ride, Just a Click Away</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="scroll-smooth bg-gray-50">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-red-700 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-2">
+                    <i class="fas fa-bus text-red-700 text-xl"></i>
+                </div>
+                <a href="#" class="heading-font text-white text-2xl font-bold">BusBooking</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-white hover:text-yellow-300 transition">Home</a>
+                <a href="#features" class="text-white hover:text-yellow-300 transition">Features</a>
+                <a href="#how-it-works" class="text-white hover:text-yellow-300 transition">How It Works</a>
+                <a href="#about" class="text-white hover:text-yellow-300 transition">About</a>
+                <a href="https://github.com/NizzCorp-Academy/BusTrack/tree/main/docs" target="_blank" class="text-white hover:text-yellow-300 transition">Documentation</a>
+                <a href="https://github.com" target="_blank" class="px-4 py-2 bg-yellow-500 text-red-700 rounded-full font-medium hover:bg-yellow-400 transition">
+                    Download App
+                </a>
+            </div>
+            
+            <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-red-800 px-4 py-2" id="mobile-menu">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="text-white hover:text-yellow-300 transition py-1">Home</a>
+                <a href="#features" class="text-white hover:text-yellow-300 transition py-1">Features</a>
+                <a href="#screenshots" class="text-white hover:text-yellow-300 transition py-1">Screenshots</a>
+                <a href="#how-it-works" class="text-white hover:text-yellow-300 transition py-1">How It Works</a>
+                <a href="#about" class="text-white hover:text-yellow-300 transition py-1">About</a>
+                <a href="https://github.com" target="_blank" class="px-4 py-2 bg-yellow-500 text-red-700 rounded-full font-medium hover:bg-yellow-400 transition text-center">
+                    Download App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-red-600 to-red-700 text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="heading-font text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                    Your Local Ride, <br>Just a Click Away
+                </h1>
+                <p class="text-xl mb-8 max-w-lg">
+                    Book buses in your region with ease. Skip the queues and travel smart with our student-built app.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="https://github.com" target="_blank" class="px-6 py-3 bg-yellow-500 text-red-700 rounded-full font-medium hover:bg-yellow-400 transition text-center">
+                        <i class="fas fa-download mr-2"></i> Download App
+                    </a>
+                    <a href="https://github.com/NizzCorp-Academy/BusTrack" target="_blank" class="px-6 py-3 bg-white text-red-700 rounded-full font-medium hover:bg-gray-100 transition text-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center phone-mockup">
+                <img src="./images/19199008.jpg" alt="BusBooking App" class="rounded-3xl border-8 border-white max-h-96">
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-red-700 mb-4">
+                    Why Choose BusBooking?
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Designed with local travelers in mind, our app brings convenience to your regional bus journeys.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-t-4 border-green-500">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marked-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-gray-800 mb-2">Live Tracking</h3>
+                    <p class="text-gray-600">
+                        Know exactly where your bus is with real-time GPS tracking.
+                    </p>
+                </div>
+                                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-t-4 border-blue-500">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bus text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-gray-800 mb-2">Local Bus Types</h3>
+                    <p class="text-gray-600">
+                        Find the perfect bus for your journey from our regional fleet.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border-t-4 border-purple-500">
+                    <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wallet text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-gray-800 mb-2">Digital Tickets</h3>
+                    <p class="text-gray-600">
+                        No paper needed - all your tickets stored in the app.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots -->
+    <!-- <section id="screenshots" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-red-700 mb-4">
+                    App Screenshots
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Take a look at the simple and intuitive interface of BusBooking.
+                </p>
+            </div>
+            
+            <div class="flex overflow-x-auto pb-8 space-x-6 snap-x snap-mandatory">
+                <div class="flex-shrink-0 snap-center">
+                    <div class="bg-white p-2 rounded-xl shadow-lg">
+                        <img src="https://via.placeholder.com/250x500/ffffff/ff0000?text=Home+Screen" alt="Home Screen" class="rounded-lg h-80">
+                        <p class="mt-2 text-center font-medium">Home Screen</p>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <div class="bg-white p-2 rounded-xl shadow-lg">
+                        <img src="https://via.placeholder.com/250x500/ffffff/ff0000?text=Bus+Selection" alt="Bus Selection" class="rounded-lg h-80">
+                        <p class="mt-2 text-center font-medium">Bus Selection</p>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <div class="bg-white p-2 rounded-xl shadow-lg">
+                        <img src="https://via.placeholder.com/250x500/ffffff/ff0000?text=Seat+Map" alt="Seat Map" class="rounded-lg h-80">
+                        <p class="mt-2 text-center font-medium">Seat Selection</p>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <div class="bg-white p-2 rounded-xl shadow-lg">
+                        <img src="https://via.placeholder.com/250x500/ffffff/ff0000?text=Payment" alt="Payment" class="rounded-lg h-80">
+                        <p class="mt-2 text-center font-medium">Payment</p>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 snap-center">
+                    <div class="bg-white p-2 rounded-xl shadow-lg">
+                        <img src="https://via.placeholder.com/250x500/ffffff/ff0000?text=Tracking" alt="Tracking" class="rounded-lg h-80">
+                        <p class="mt-2 text-center font-medium">Live Tracking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-red-700 mb-4">
+                    How It Works
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Booking your bus has never been easier. Just follow these simple steps:
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-start space-y-8 md:space-y-0 md:space-x-8 lg:space-x-12">
+                <!-- Step 1 -->
+                <div class="timeline-step flex flex-col items-center text-center max-w-xs">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-red-700 text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-gray-800 mb-2">Enter Journey Details</h3>
+                    <p class="text-gray-600">
+                        Select your source, destination, and travel date.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="timeline-step flex flex-col items-center text-center max-w-xs">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-yellow-700 text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-gray-800 mb-2">Choose Bus & Seat</h3>
+                    <p class="text-gray-600">
+                        Pick from available buses and select your preferred seat.
+                    </p>
+                </div>
+                
+
+                
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center max-w-xs">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-blue-700 text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold text-gray-800 mb-2">Track Your Ride</h3>
+                    <p class="text-gray-600">
+                        Get real-time updates and track your bus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the App -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-red-700 mb-4">
+                        About BusBooking
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        BusBooking was created by students at NizzCorp Academy as part of our capstone project. We noticed the challenges local travelers face when booking regional buses - long queues, uncertainty about schedules, and lack of real-time information.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our app solves these problems by bringing the entire booking process to your smartphone. With features like live tracking, digital tickets, and multilingual support, we're making regional bus travel more convenient and accessible for everyone.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        This project showcases our understanding of modern development practices, UI/UX principles, and real-world problem solving. It's not just a prototype - it's a fully functional demonstration of what students can build with the right guidance and creativity.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h3 class="heading-font text-xl font-bold text-gray-800 mb-4">Built With:</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center bg-white px-4 py-2 rounded-lg shadow-sm">
+                                <i class="fab fa-google text-red-500 text-2xl mr-2"></i>
+                                <span class="font-medium">Firebase</span>
+                            </div>
+                            <div class="flex items-center bg-white px-4 py-2 rounded-lg shadow-sm">
+                                <i class="fas fa-mobile-alt text-blue-500 text-2xl mr-2"></i>
+                                <span class="font-medium">Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+
+                        <img src="./images/314062-P962ZM-317.jpg" alt="Regional Bus Coverage" class="rounded-lg w-full">
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer/Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-red-700 mb-4">
+                    Meet The Team
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    A group of passionate students from NizzCorp Academy who built this app as their capstone project.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-red-200 flex items-center justify-center mr-4">
+                            <span class="text-red-700 text-xl font-bold">JD</span>
+                        </div>
+                        <div>
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Ujwal A Krishan</h3>
+                            <p class="text-gray-600">Team Lead</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Focused on development and system architecture. Passionate about creating efficient solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/UjwalNizzCorp" target="_blank" class="text-gray-500 hover:text-red-600 transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                   
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-yellow-200 flex items-center justify-center mr-4">
+                            <span class="text-yellow-700 text-xl font-bold">AS</span>
+                        </div>
+                        <div>
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Fayas</h3>
+                            <p class="text-gray-600">UI/UX Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Designed the app interface with a focus on regional aesthetics and user-friendly experience.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-red-600 transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-pink-500 transition">
+                            <i class="fab fa-dribbble text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-green-200 flex items-center justify-center mr-4">
+                            <span class="text-green-700 text-xl font-bold">RJ</span>
+                        </div>
+                        <div>
+                            <h3 class="heading-font text-xl font-bold text-gray-800">Muhammed Rasim</h3>
+                            <p class="text-gray-600">Mobile Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Implemented the Flutter frontend with attention to performance and cross-platform compatibility.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-red-600 transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-2">
+                            <i class="fas fa-bus text-red-700 text-xl"></i>
+                        </div>
+                        <span class="heading-font text-2xl font-bold">BusBooking</span>
+                    </div>
+                    <p class="text-red-200">
+                        Your Local Ride, Just a Click Away
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+                    <div>
+                        <h4 class="heading-font font-bold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-red-200 hover:text-white transition">Home</a></li>
+                            <li><a href="#features" class="text-red-200 hover:text-white transition">Features</a></li>
+                            <li><a href="#how-it-works" class="text-red-200 hover:text-white transition">How It Works</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="heading-font font-bold mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="https://github.com/NizzCorp-Academy/BusTrack/tree/main/docs" target="_blank" class="text-red-200 hover:text-white transition">Documentation</a></li>
+                            <li><a href="https://github.com/NizzCorp-Academy/BusTrack" target="_blank" class="text-red-200 hover:text-white transition">GitHub</a></li>
+                            <li><a href="#" class="text-red-200 hover:text-white transition">Download</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="heading-font font-bold mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2 text-red-300"></i>
+                                <a href="mailto:info@nizzcorp.com">info@nizzcorp.com</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2 text-red-300"></i>
+                                <a href="https://share.google/X95t8NyZvGgyfkUoU" target="_blank">NizzCorp Academy</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-globe mr-2 text-red-300"></i>
+                                <a href="https://nizzcorp.com" target="_blank">https://nizzcorp.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-red-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-red-300 mb-4 md:mb-0">
+                    Made with <i class="fas fa-heart text-red-400"></i> by NizzCorp Academy Students
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-red-300 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-red-300 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-red-300 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-red-300 hover:text-white transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -2,8 +2,8 @@
 
 A **Flutter-based mobile application** for booking bus seats. This app simplifies the process of finding routes, selecting buses, and booking seats—**no online payment is required** at this stage. Booking details are stored using **Firebase Firestore**, and users can view their bookings in their **profile page**.
 
-📎 **Website**: [https://NizzCorp-Academy.github.io/bus-booking-app](https://NizzCorp-Academy.github.io/bus-booking-app)  
-🌐 **GitHub Repo**: [github.com/NizzCorp-Academy/bus-booking-app](https://github.com/NizzCorp-Academy/bus-booking-app)
+📎 **Website**: [https://nizzcorp-academy.github.io/BusTrack/](https://nizzcorp-academy.github.io/BusTrack/)  
+🌐 **GitHub Repo**: [https://github.com/NizzCorp-Academy/BusTrack](https://github.com/NizzCorp-Academy/BusTrack)
 
 ---
 
